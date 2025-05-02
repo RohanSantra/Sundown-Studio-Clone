@@ -155,7 +155,8 @@ nav .menu i {
 nav .menu {
     display: none;
 }
-nav .overlay{
+
+nav .overlay {
     display: none;
 }
 
@@ -975,15 +976,16 @@ footer .part-3 h5 {
         width: 100%;
     }
 
-    .page6{
+    .page6 {
         height: 80vh;
     }
+
     footer {
         height: 80vh;
 
-    
+
     }
-    
+
     .orange-box-1 {
         height: 100%;
         width: 150%;
@@ -992,64 +994,66 @@ footer .part-3 h5 {
         transform-origin: center;
 
     }
-    
+
     @keyframes box1 {
         0% {
             rotate: 20deg;
         }
-    
+
         100% {
             rotate: 30deg;
         }
     }
-    
+
     .orange-box-2 {
         display: none;
     }
-    footer{
+
+    footer {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
     }
+
     footer .part-1 {
         padding: 0 5vw 0 5vw;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
-    
+
     footer .part-1 h3 {
         font-family: neu2;
         font-size: 32px;
     }
-    
+
     footer .part-1 .right {
         width: 100%;
     }
-    
+
     footer .part-1 .right h4 {
         width: 100%;
         margin-top: 20px;
         margin-bottom: 20px;
         font-family: neu;
     }
-    
+
     footer .part-1 .right input {
         font-size: 1vw;
-    
+
     }
-    
+
     footer .part-1 .right input::placeholder {
         font-size: 1rem;
     }
-    
+
     footer .part-2 h1 {
         margin-top: 2rem;
         text-align: center;
         font-size: 6rem;
         line-height: 8rem;
     }
-    
+
     footer .part-3 h5 {
         font-size: 0.9rem;
     }
