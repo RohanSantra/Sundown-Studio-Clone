@@ -15,8 +15,11 @@ function loaderAnimation() {
     setTimeout(() => {
         loader.style.animation = "moveup 1s linear"
         loader.style.top = "-100%";
-        loader.style.display="none";
+        setTimeout(()=>{
+            loader.style.display="none";
+        },1000)
     }, 4200);
+    
 }
 
 
