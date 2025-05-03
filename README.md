@@ -6,7 +6,7 @@ A modern, animated website clone of [Sundown Studio](https://www.sundown-studio.
 
 ## ✨ Live Preview
 
-> 💻 [View Demo](#) — *(optional: add your deployed link)*
+> 💻 https://rohansantra.github.io/Sundown-Studio-Clone/
 
 ---
 
@@ -18,10 +18,7 @@ A modern, animated website clone of [Sundown Studio](https://www.sundown-studio.
 - 📦 **[Swiper.js](https://swiperjs.com/)** – Interactive carousel
 - 🌪️ **[Locomotive Scroll](https://github.com/locomotivemtl/locomotive-scroll)** – Smooth scroll effects
 - 💠 **[Remix Icons](https://remixicon.com/)** – Iconography
-- 🔤 Custom Fonts (Neue Haas Display):
-      - NeueHaasDisplayLight.ttf (neu)
-      - NeueHaasDisplayMediu.ttf (neu2)
-      - NeueHaasDisplayRoman.ttf (neu3)
+- 🔤 **Custom Fonts (Neue Haas Display)** – NeueHaasDisplayLight.ttf (neu), NeueHaasDisplayMediu.ttf (neu2), NeueHaasDisplayRoman.ttf (neu3)
 
 ---
 
@@ -49,11 +46,13 @@ Newsletter subscription input, quick links, and company footer with social links
 
 ## 📂 Folder Structure
 
+```bash
+/
 ├── assets/
 │ └── Img/ # Images and logos
-  └── fonts/ #fonts used 
+  └── fonts/ #fonts used
+├── README.md
 ├── index.html
 ├── style.css
 ├── script.js
-└── README.md
 
