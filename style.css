@@ -67,7 +67,7 @@ body {
     }
 
     100% {
-        top: -100%;
+        top: -130%;
     }
 }
 
@@ -763,6 +763,9 @@ footer .part-3 h5 {
 }
 
 @media (max-width:600px) {
+    #loader h1{
+        font-size: 3rem;
+    }
     .overlay {
         height: 100vh;
         width: 100vw;

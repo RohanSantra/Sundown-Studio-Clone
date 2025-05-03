@@ -14,7 +14,7 @@ function loaderAnimation() {
     const loader = document.querySelector("#loader");
     setTimeout(() => {
         loader.style.animation = "moveup 1s linear"
-        loader.style.top = "-100%";
+        loader.style.top = "-130%";
     }, 4200);
 }
 
