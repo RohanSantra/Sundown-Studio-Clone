@@ -15,11 +15,11 @@ function loaderAnimation() {
     setTimeout(() => {
         loader.style.animation = "moveup 1s linear"
         loader.style.top = "-100%";
-        setTimeout(()=>{
-            loader.style.display="none";
-        },1000)
+        setTimeout(() => {
+            loader.style.display = "none";
+        }, 1000)
     }, 4200);
-    
+
 }
 
 
@@ -102,15 +102,30 @@ function swiperAnimation() {
 
 
 function menu() {
-    document.querySelector("nav .menu").addEventListener("click", () => {
-        document.querySelector("nav .overlay").classList.toggle("top")
-        document.querySelector("nav .links").classList.toggle("top")
-        document.querySelector("nav .menu i").classList.toggle("ri-close-large-line");
-        document.querySelector("nav .menu i").classList.toggle("ri-menu-line");
-        document.querySelectorAll("nav .links h4").forEach(heading => {
+    const menuButton = document.querySelector("nav .menu");
+    const icon = menuButton.querySelector("i");
+    const overlay = document.querySelector("nav .overlay");
+    const links = document.querySelector("nav .links");
+    const headings = document.querySelectorAll("nav .links h4");
+
+    menuButton.addEventListener("click", () => {
+        overlay.classList.toggle("top");
+        links.classList.toggle("top");
+        icon.classList.toggle("ri-close-large-line");
+        icon.classList.toggle("ri-menu-line");
+        headings.forEach(heading => {
             heading.classList.toggle("hidden")
         })
     });
+    document.addEventListener("scroll", function () {
+        overlay.classList.remove("top");
+        links.classList.remove("top");
+        icon.classList.remove("ri-close-large-line");
+        icon.classList.add("ri-menu-line");
+        headings.forEach(heading => {
+            heading.classList.remove("hidden")
+        })
+    })
 }
 
 
