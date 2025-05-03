@@ -12,21 +12,10 @@ function locomotiveScroll() {
 
 function loaderAnimation() {
     const loader = document.querySelector("#loader");
-    const headings = document.querySelectorAll("#loader h1");
-    headings.forEach((h1, index) => {
-        setTimeout(() => {
-            h1.style.display = 'block';
-            h1.style.animation = "fadeOut 1s ease";
-            setTimeout(() => {
-                h1.style.display = 'none';
-                h1.style.animation = 'none';
-            }, 900);
-        }, index * 1000);
-    });
     setTimeout(() => {
         loader.style.animation = "moveup 1s linear"
         loader.style.top = "-100%";
-    }, 3500);
+    }, 4200);
 }
 
 
