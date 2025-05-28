@@ -18,7 +18,7 @@ function loaderAnimation() {
         setTimeout(() => {
             loader.style.display = "none";
         }, 1000)
-    }, 4200);
+    }, 3200);
 
 }
 
