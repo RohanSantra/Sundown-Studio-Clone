@@ -31,7 +31,7 @@ function ImagePopUpAnimation() {
         e.addEventListener("mouseenter", function () {
             const image = e.getAttribute("data-image")
             fixed.style.backgroundImage = `url(${image})`
-            fixed.style.display = "block"
+                
         })
         e.addEventListener("mouseleave", function () {
             fixed.style.display = "none"
@@ -79,10 +79,6 @@ function swiperAnimation() {
     var swiper = new Swiper(".mySwiper", {
         slidesPerView: 1.5,
         spaceBetween: 20,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
         breakpoints: {
             640: {
                 slidesPerView: 2,
