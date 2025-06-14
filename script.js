@@ -30,8 +30,9 @@ function ImagePopUpAnimation() {
     elemC.forEach(function (e) {
         e.addEventListener("mouseenter", function () {
             const image = e.getAttribute("data-image")
+            fixed.style.display = 'flex';
             fixed.style.backgroundImage = `url(${image})`
-                
+
         })
         e.addEventListener("mouseleave", function () {
             fixed.style.display = "none"
